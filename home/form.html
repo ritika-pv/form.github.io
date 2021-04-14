@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+         <head>
+                 <meta charset="utf-8">
+                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                 <!--bootstrap-->
+                 <link rel="stylesheet" href="../bootstrap-css/bootstrap.min.css">
+                 <!--javascript file-->
+                 <link rel="stylesheet" href="../js">
+                 <!--my css-->
+                 <link rel="stylesheet" href="../my-css/form.css">
+                 <!--javascript file-->
+                 <script type="text/javascript" src="..\js\myjavascript.js"></script>
+                 <!--Google fonts-->
+                 <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+                 <title>application details !</title>
+         </head>
+        <body>
+                 <div  class="container" >
+                          <div class="row">
+                                  <div class="col-md-7">
+                                           <h1 class="text-left ">My  Bootstrap Registration Form</h1>
+                                           <p class="text-left">This is my second bootstrap form.The credit for the successfull development of this form totally goes to Neeraj Bhaia .His way of teaching makes it really very easy for us to understand the difficult and complex things easily.Also ,he makes the class really very interactive .</p>
+                                   </div>
+                
+                                   <!--heading-->
+                                   <div class="col-md-5">
+                                           <form class="abc"  name="action" onsubmit="return validation()">
+                                           <div class="row">
+                                                    <h3>Registration Form</h3>
+                                           </div>
+                                            <hr>
+                                           <!--name-->        
+                                            <div class="row">
+          
+                                                   <label class=" col-md-2 label control-label">
+                                                            *Name
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                            <input type="text" class="form-control" id="name" placeholder="Name" >
+                                                            <span id="sname" class="text-danger  font-weight-bold"></span>
+                                                    </div>
+                                           </div>
+                                           <!--age-->
+                                           <div class="row">
+                                                   <label class=" col-md-2 label control-label">
+                                                            *Age
+                                                   </label>
+                                                   <div class="col-md-10">
+                                                             <input type="number" class="form-control" id="age" placeholder="Age"  >
+                                                             <span id="sage" class="text-danger  font-weight-bold"></span>
+                                                    </div>
+                                           </div>
+                                           <!--contact-->
+                                           <div class="row">
+                                                   <label class=" col-md-2 label control-label">
+                                                            *Contact
+                                                   </label>
+                                                   <div class="col-md-10">
+                                                            <input type="number" class="form-control" id="contact" placeholder="Contact">
+                                                            <span id="scontact" class="text-danger  font-weight-bold"></span>
+                                                   </div>
+                                           </div>
+                                            <!--email-->
+                                            <div class="row">
+                                                   <label class=" col-md-2 label control-label">
+                                                            *E-mail
+                                                    </label>
+                                                    <div class="col-md-10">
+                                                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                                            <span id="semail" class="text-danger  font-weight-bold"></span>
+                                                     </div>
+                                             </div>
+                                            <!--password-->
+                                            <div class="row">
+                                                   <label class=" col-md-2 label control-label">
+                                                            *Password
+                                                   </label>
+                                                   <div class="col-md-10">
+                                                            <input type="password" class="form-control" id="pass" placeholder="Password">
+                                                            <span id="spassword" class="text-danger  font-weight-bold"></span>
+                                                   </div>
+                                            </div>
+                                           <!--confirm password-->
+                                           <div class="row">
+                                                    <label class=" col-md-2 label control-label">
+                                                            *Confirm Password
+                                                    </label>
+                                                    <div class="col-md-10   ">
+                                                            <input type="password" class="form-control" id="cpass" placeholder="Password ">
+                                                            <span id="sconfirmpassword" class="text-danger  font-weight-bold"></span>
+                                                    </div>
+                                           </div>
+                                           <!--city-->
+                                           <div class="row abc" >
+                                                   <label class="col-md-2  label control-label  "    for=" inputCity">
+                                                             *City
+                                                   </label>
+                                                   
+                                                   <div class="col-md-10">
+                                                            <select class="custom-select"  id="form-city">
+
+                                                                     <option value="" >Select city</option>
+                                                                     <option value="Bhopal" >Bhopal</option>
+                                                                     <option value="indore">Indore</option>
+                                                                     <option value="jabalpur" >Jabalpur</option>
+                                                                     <option value="katni">Katni</option>
+                                                                     <option value="delhi" >Delhi</option>
+                                                                     <option value="mumbai">Mumbai</option>
+                                                                     <option value="nagpur" >Nagpur</option>
+                                                                     <option value="pune">Pune</option>
+                                                            </select>
+                                                            <span id="scity" class="text-danger  font-weight-bold"></span>
+                                                    </div>
+                                           </div>
+                                           <!--hobbies-->
+                                           <div class="row abc">
+                                                   <label class="col-md-2  label control-label" for="interestFields">*Hobbies </label>
+                                                   <div class="col-md-10">
+                                                            <div class="form-check">
+                                                                    <input class="form-check-input" name="hobbies" type="checkbox" id="accept" value="option1" >
+                                                                    <label class="form-check-label" for="exampleRadios1">
+                                                                                    Singing
+                                                                    </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                    <input class="form-check-input"  name="hobbies"   type="checkbox"   id="accept" value="option2">
+                                                                    <label class="form-check-label" for="exampleRadios2">
+                                                                             Dancing  
+                                                                    </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                    <input class="form-check-input"   name="hobbies"    type="checkbox"  id="accept" value="option3" >
+                                                                    <label class="form-check-label" for="exampleRadios3">
+                                                                                     Reading
+                                                                    </label>
+                                                                    
+                                                            </div>
+                                                            <span id="shobby" class="text-danger  font-weight-bold"></span>
+                                                   </div>
+
+                                           </div>
+                                           <!--gender-->
+                                           <div class="row">
+                                                   <label class="col-md-2  label control-label" for="Gender">*Gender</label>
+                                                   <div class="col-md-10">
+                                                            <div class="form-check">
+                                                                     <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="option1" >
+                                                                     <label class="form-check-label" for="exampleRadios1">
+                                                                             Male
+                                                                    </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="option2">
+                                                                    <label class="form-check-label" for="exampleRadios2">
+                                                                             Female
+                                                                     </label>
+                                                                    <br/>
+                                                                      <span id="sgender" class="text-danger  font-weight-bold"></span>
+                                                             </div>
+
+                                                   </div>
+                                           </div>
+                                           <!--address-->
+                                           <div class="row abc">
+                                                   <label class="col-md-2  label control-label" for="exampleFormControlTextarea1">*Address</label>
+                                                   <div  class="col-md-10">
+                                                            <textarea class="form-control" id="address" rows="3"></textarea>
+                                                            <span id="saddress" class="text-danger  font-weight-bold"></span>
+                                                   </div>
+                                           </div>
+                                           <!--button-->
+                                           <div class="col-auto justify-content-center  abc">
+
+                                                    <button type="submit" class=" btn btn-success btn-lg btn-block " value="send">Submit</button>
+                                           </div>
+                                  </form>
+                          </div>
+                 </div>
+            
+            
+         <!--    <script type="text/javascript">
+                            
+                 function validation(){
+                
+         //validation for name
+                                                
+                                                var name=document.getElementById('name').value;
+                                                var n=name.trim();
+                                                if(n==""){
+                                                    
+                                                    document.getElementById('sname').innerHTML="**Please fill the name field**";
+                                                    return false;
+                                                }
+                                                    
+                                                if(!isNaN(n)){
+                                                     error=true;
+                                                     document.getElementById('sname').innerHTML="**Wrong Data Inserted**";
+                                                     return false;
+                                                }
+                                                if(n.length<3)
+                                                {
+                                                     
+                                                     document.getElementById('sname').innerHTML="**There must be minimum 3 characters in your name**"; 
+                                                      return false;
+                                                }
+                                                else{
+                                                     document.getElementById('sname').innerHTML="";
+                                                }
+                                                
+                                                
+                                               //validations for age        
+                                               var age=document.getElementById('age').value;
+                                               var a=age.trim();
+                                               if(a==""){
+                                                     document.getElementById('sage').innerHTML="**Please fill the age field**";
+                                                     return false;
+                                                }
+                                               if(!((a>0)&&(a<120))){
+                                                    document.getElementById('sage').innerHTML="**Wrong Data Inserted**";
+                                                    return false;
+                                                }
+                                                else{
+                                                     document.getElementById('sage').innerHTML="";
+                                                }
+                                                
+                                                
+                                               //validations for contact
+                                                var cont=document.getElementById('contact').value;
+                                                var ct=cont.trim();
+                                                if(ct==""){
+                                                      document.getElementById('scontact').innerHTML="**Please fill the contact field**";
+                                                      return false;
+                                                }
+                                                if(isNaN(ct)){
+                                                      document.getElementById('scontact').innerHTML="**Contact No. must have digits only **";
+                                                      return false;
+                                                }
+                                                if(ct.length!=10){
+                                                     document.getElementById('scontact').innerHTML="**Contact No. must have 10 digits **";
+                                                      return false;
+                                                }
+                                               else{
+                                                     document.getElementById('scontact').innerHTML="";
+                                               }
+                                               
+                                               
+                                                //validations for email     
+                                                  var email=document.getElementById('email').value;
+                                                  var e=email.trim();
+                                                  if(e==""){
+                                                    document.getElementById('semail').innerHTML="**Please fill the email field**";
+                                                    return false;
+                                                  }
+                                                  else{
+                                                     document.getElementById('semail').innerHTML=""; 
+                                                  }
+                                                  
+                                                  
+                                                //validations for password   
+                                                var pass=document.getElementById('pass').value;
+                                                var p=pass.trim();
+                                                if(p==""){
+                                                    document.getElementById('spassword').innerHTML="**Please fill the password field**";
+                                                    return false;
+                                                }
+                                                if(p.length<8){
+                                                    document.getElementById('spassword').innerHTML="**password must be atleast 8 characters long**";
+                                                    return false;
+                                                }
+                                                else{
+                                                    document.getElementById('spassword').innerHTML="";
+                                                }
+                                                
+                                              // validations for confirm password
+                                              var cpass=document.getElementById('cpass').value;
+                                              var cp=cpass.trim();
+                                              if(cp==""){
+                                                    document.getElementById('sconfirmpassword').innerHTML="**Please fill the confirm password field**";
+                                                    return false;
+                                              }
+                                              if(cp!=p){
+                                                     document.getElementById('sconfirmpassword').innerHTML="**Oops!...Wrong Password **";
+                                                     return false;
+                                              }
+                                              else{
+                                                      document.getElementById('sconfirmpassword').innerHTML="";
+                                              }
+                                              
+                                              
+                                              //validations for address     
+                                              var address=document.getElementById('address').value;
+                                              if(address==""){
+                                                    document.getElementById('saddress').innerHTML="**Please fill the confirm address field**";
+                                                    return false;
+                                               }
+                                              if((address.length>200)&&(address.length<500)){
+                                                   document.getElementById('saddress').innerHTML="";
+                                                    
+                                               }
+                                               else{
+                                                   document.getElementById('saddress').innerHTML="**Length of the address must be between 200 and 500 characters**";
+                                                    return false;
+                                               }
+                                             
+                              
+                                               
+                                               
+                                               
+                                                //validations for checkbox
+                                                   
+                                                   
+                                                //validations for radio button
+                                                   
+                                                 
+                                     return true;           
+                                                
+                                    }
+
+
+        </script>-->
+                                       
+      <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+           
+    </body>
+</html>
